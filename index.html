@@ -22,29 +22,29 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse mt-3" id="navbarNav">
         <ul class="navbar-nav  ms-auto">
           <li class="nav-item">
-            <a id="titre-nav" class="nav-link active" aria-current="page" href="#">Apropos</a>
+            <a id="titre-nav1" class="nav-link active" aria-current="page" href="#">Apropos</a>
           </li>
           <li class="nav-item">
-            <a id="titre-nav" class="nav-link" href="#">contact</a>
+            <a id="titre-nav" class="nav-link ms-5" href="#">contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-3 " href="#"><img src="images/magnifying-glass.png" alt=""> </a>
+            <a class="nav-link me-3 " href="#"><img id="bntlight" class="me-3" src="images/moon.png" alt=""> <img src="images/magnifying-glass.png" alt=""> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled me-3" href="#" tabindex="-1" aria-disabled="true"><img src="images/shopping-cart (2).png" alt=""> </a>
+            <a class="nav-link disabled me-3" href="#" tabindex="-1" aria-disabled="true"><img src="images/shopping-cart (2).png" alt=""> <span id="val">0 </span> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link me-5" href="#"><img src="images/user2.png" alt=""><button id="bntlight" type="button" class="btn"><img src="images/moon.png" alt=""> </a>
+            <a class="nav-link me-3" href="#"><img src="images/user2.png" alt=""><button id="bntlight" type="button" class="btn"></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
- 
+ <hr class="hr-nav">
  
     <!-----------------------------------END-Navbar-------------------------------------------->  
 
@@ -226,15 +226,34 @@
       </div>
     </div>
   </div>
-  <!-------------nnnnnn----------->
-  <div class="container">
+
+  <!-----------------------------------test panier------------------------------->
+ 
+
+  <!---------------------------------Footer-------------------------->
+  <footer><div class="container mt-5">
     <div class="row">
+      <!---------------------logi --info------------->
+      <div class="col-md-3"> <img id="logo-footer" src="images/logo.png" alt=""> <p id="parg-footr">Des modèles qui nous entraînent du plus profond de la Terre au sommet des montagnes, des confins du système solaire aux régions polaires les plus reculées, </p> </div>
+      <!--------------------------icon------>
       <div class="col-md-3"></div>
-      <!------------------>
-      <div class="col-md-9"></div>
+      <!------------------------map--------------------->
+      <div class="col-md-3"><div style="width: 100%"><iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=210&amp;hl=en&amp;q=Tunis%20hammam%20chatt+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/"></a></div></div>
+      <!----------------------msg-------------->
+      <div class="col-md-3"> <p id="par-msg"> <strong>INSCRIVEZ-VOUS POUR LES NOUVELLES DE STYLE</strong> 
+        Restez informé des derniers conseils de style et des lancements de produits. En savoir plus sur nos e-mails et notre politique de confidentialité </p>
+    <div class="row">
+      <label for="Adresse e-mail"></label>
+      <div class="col-md-2"><input class="form-control" placeholder="votre@adresse.com" value="" aria-label="Adresse e-mail"></div>
+      <div class="col-md-1"> <button type="submit" class="btn btn-light">Soumettre</button></div>
+      <!-------------------->
     </div>
   </div>
+      </div>
+  </div></footer>
+  
 <!---------------------------------------link js-------------------------->
 <script src="script.js"></script>
+<script src="panier.js"></script>
 </body>
 </html>

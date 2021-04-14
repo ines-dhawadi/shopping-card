@@ -1,7 +1,13 @@
                  /*******************************MONTRE********************************/
+ @font-face{
+src: url(fonts/Futura_Now_Free_Weights/);
+font-family: futura;
+                 }
  /**********************************Navbar***************************************/
 body{
     overflow-x: hidden ;
+    font-family: futura;
+    
 }
 body.modnight{
     background-color: rgba(0, 0, 0, 0.897);
@@ -12,12 +18,17 @@ body.modnight{
     height: 5rem;
 }
 #titre-nav{
-    margin-right: 15rem;
+    margin-right: 20rem;
+    color: white;
+}
+#titre-nav1{
+    
     color: white;
 }
 #img-navvv{
     background-color: transparent;
-font-family: futura now;
+font-family: futura;
+font-size: 22px;
 }
 .img-covr{
     width: 100%;
@@ -25,6 +36,11 @@ font-family: futura now;
    
     margin-top: -25rem;
     z-index: -1;
+}
+.hr-nav{
+    color: white;
+     box-shadow: 1px 2px 1px 2px rgba(255, 255, 255, 0.199);
+     margin-top: -1rem;
 }
 /***------------------------------3 card------------------------------------------***/
 .card3{
@@ -45,4 +61,38 @@ font-family: futura now;
     width: 12rem;
     height: 15rem;
 }
-/*********************************END*Navbar**************************************/
+/***********************************************************************/
+/*----------------------------------------Footer--------------------------------*/
+#parg-footr{
+    text-align: center;
+    font: 12px/18px Georgia;
+}
+#logo-footer{
+    width: 15rem;
+    height: 9rem;
+}
+#par-msg{
+  
+    font: 12px/18px Georgia;
+    font-weight: 400;
+    color: #656565;
+}
+#val{
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    width: 5px;
+    height: 1px;
+    padding: 5px;
+
+}
+
+
+/***--------------------------------------------------panier--------------------------------*/
+.bbcc{
+background-color: #003a63;
+color: white;
+padding: 1rem;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
+}

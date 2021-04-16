@@ -30,6 +30,11 @@ body.modnight{
 font-family: futura;
 font-size: 22px;
 }
+#img-navv{
+    background-color: black;
+font-family: futura;
+font-size: 22px;
+}
 .img-covr{
     width: 100%;
     height: 300px;
@@ -41,6 +46,40 @@ font-size: 22px;
     color: white;
      box-shadow: 1px 2px 1px 2px rgba(255, 255, 255, 0.199);
      margin-top: -1rem;
+}
+/*------------------------------modal--------------------------------*/
+.modal{
+    width: 70rem !important;
+    background-color: rgba(19, 16, 16, 0.363) !important;
+}
+#titre-panier{
+    font-size: 20px;
+    justify-content: space-around;
+}
+#bt-modl-p{
+    margin-left: 20rem;
+    margin-top: -4rem;
+    background-color: black;
+}
+.btn-commd{
+    background-color: black !important;
+    margin-left: 8.3rem;
+}
+#head-modl{
+    background-color: #003a63;
+}
+#logo-modal{
+    width: 15rem;
+    height: 9rem;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
+}
+.cart-col{
+    display: flex;
+
+}
+#inpt-modal{
+    width: 3rem;
 }
 /***------------------------------3 card------------------------------------------***/
 .card3{
@@ -61,8 +100,34 @@ font-size: 22px;
     width: 12rem;
     height: 15rem;
 }
+#titre-card-modal{
+    font-size: 15px;
+    margin-top: 7rem;
+    margin-left: -6rem;
+
+}
+#prix-{
+   font-size: 15px; 
+   color: black;
+   margin-left: 7rem;
+   margin-top: -6rem;
+   margin-bottom: 3rem;
+   position: relative;
+}
+.cart-quantity-input{
+    margin-left: 14rem;
+    margin-top: -5rem;
+    height: 2em;
+}
+
 /***********************************************************************/
 /*----------------------------------------Footer--------------------------------*/
+footer{
+    margin-top: 30rem;
+    background-color: #f3f3f3
+    ;
+padding: 2rem;
+}
 #parg-footr{
     text-align: center;
     font: 12px/18px Georgia;
@@ -70,6 +135,7 @@ font-size: 22px;
 #logo-footer{
     width: 15rem;
     height: 9rem;
+    margin-top: -2.5rem;
 }
 #par-msg{
   
@@ -86,8 +152,27 @@ font-size: 22px;
     padding: 5px;
 
 }
+.search-box{
+    width: 13rem;
+    font-size: 14px;
 
+}
+#res-sos-tot{
+    display: inline-grid;
 
+}
+#res-sos{
+   
+    margin-left: 9rem;  
+}
+#map-fot{
+    margin-right: 5rem;
+}
+.Recaptcha{
+   margin-top: 3rem;
+   width: 15rem !important;
+   height: 8rem !;
+}
 /***--------------------------------------------------panier--------------------------------*/
 .bbcc{
 background-color: #003a63;
@@ -96,3 +181,4 @@ padding: 1rem;
 border-top-left-radius: 16px;
 border-top-right-radius: 16px;
 }
+

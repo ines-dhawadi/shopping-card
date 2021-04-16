@@ -16,7 +16,7 @@
 <body>
  
    <!------------------------------------Navbar-------------------------------------------->
-   <nav class="navbar navbar-expand-lg navbar-light " id="img-navvv">
+   <nav class="navbar navbar-expand-lg navbar-light" id="img-navvv">
     <div class="container-fluid">
       <a class="navbar-brand ms-5" href="#"><img id="logo" src="images/logo1.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse mt-3" id="navbarNav">
         <ul class="navbar-nav  ms-auto">
           <li class="nav-item">
-            <a id="titre-nav1" class="nav-link active" aria-current="page" href="#">Apropos</a>
+            <a id="titre-nav1" class="nav-link active" aria-current="page" href="index.html">Apropos</a>
           </li>
           <li class="nav-item">
             <a id="titre-nav" class="nav-link ms-5" href="#">contact</a>
@@ -34,7 +34,55 @@
             <a class="nav-link me-3 " href="#"><img id="bntlight" class="me-3" src="images/moon.png" alt=""> <img src="images/magnifying-glass.png" alt=""> </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled me-3" href="#" tabindex="-1" aria-disabled="true"><img src="images/shopping-cart (2).png" alt=""> <span id="val">0 </span> </a>
+            <!------------**********************modal******************------->
+            <!--modal-->
+<!-- Button trigger modal -->
+<a href="#"><img src="images/shopping-cart (2).png" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+</a><span id="val"></span>
+<!-- Modal -->
+<div class="modal fade  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div id="head-modl" class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><img id="logo-modal"  src="images/logo1.png" alt=""></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="width: 50rem;">
+      <!-------------**************test*********************-->
+      
+      <!---------------------------->
+
+      <section class="container content-section">
+        <h2 class="section-header">Mon panier</h2>
+        <div class="cart-row" id="titre-panier">
+            <span class="cart-item cart-header cart-column ">Éléments</span>
+            <span class="cart-price cart-header cart-column ms-5"> Prix</span>
+            <span class="cart-quantity cart-header cart-column ms-5">Quantité</span>
+            <span class="ms-5">Supprimer</span>
+        </div>
+        <hr>
+        <div class="cart-items">
+    
+        </div>
+        <hr>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price ms-5">0 TND</span>
+        </div>
+        <button id="bt-modl-p" class="btn btn-primary btn-purchase" type="button">Vider le panier</button> <br> <button class="btn btn-primary btn-commd" type="button">Finaliser ma commande</button>
+    </section>
+<!---------------------------------------------------->    
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            <!------***************************END modal ***************------------->
+            
           </li>
           <li class="nav-item">
             <a class="nav-link me-3" href="#"><img src="images/user2.png" alt=""><button id="bntlight" type="button" class="btn"></a>
@@ -61,164 +109,172 @@
     </div>
   </div>
    <!------------------------------------part2--------------------->
+<!---------------------***************************test*********************-->
 
+<!----********************************************end test*********************************-->
   <div class="container">
     <div class="row">
       <div class="col-md-2"></div>
       <!-------------->
-      <div class="col-md-10">
+      <div class="col-md-10 shop-items">
         <!------------**************3 card 1***********------------->
+        
+        <!--------------------test---------->
         <div class="row card3">
-<div class="col-md-3"><div class="card mb-5">
-  <img src="//cache.mrporter.com/variants/images/11452292647203115/in/w560_q80.jpg" class="card-img-top" alt="..." >
+<div class="col-md-3">
+  <div class="card mb-5 shop-item">
+  <img src="//cache.mrporter.com/variants/images/11452292647203115/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="..." >
   <div class="card-body text-center">
-    <h6 class="card-title">MONT BLANC</h6>
-    <p class="card-text">
+ 
+    <span class="card-title shop-item-title">MONT BLANC</span>
+    <p class="card-text shop-item-details">
       montres et merveilles <br>
-       Réf 128504
-       <br>17 730 TND</p>
-    <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+       Réf 128504 </p>
+       <span class="shop-item-price">17 730 TND</span>
+    <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
   </div>
 </div></div>
 <!----------------->
-<div class="col-md-3"><div class="card">
-  <img src="//cache.mrporter.com/variants/images/11452292646060097/in/w560_q80.jpg" class="card-img-top" alt="...">
+<div class="col-md-3"><div class="card shop-item">
+  <img src="//cache.mrporter.com/variants/images/11452292646060097/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
   <div class="card-body text-center">
-    <h5 class="card-title">ROGER DUBUIS</h5>
-    <p class="card-text">
+    <span class="card-title shop-item-title">ROGER DUBUIS</span>
+    <p class="card-text shop-item-details">
       montres et merveilles <br>
-      Réf 328504
-   <br> 439 972 TND</p>
-   <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+      Réf 328504</p>
+ <span class="shop-item-price"> 439 972 TND</span>
+   <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
   </div>
 </div></div>
 <!------------------->
-<div class="col-md-3"><div class="card" >
-  <img src="//cache.mrporter.com/variants/images/6630340696378567/in/w560_q80.jpg" class="card-img-top" alt="...">
+<div class="col-md-3"><div class="card shop-item" >
+  <img src="//cache.mrporter.com/variants/images/6630340696378567/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
   <div class="card-body text-center">
-    <h5 class="card-title">H. MOSER & CIE.</h5>
-    <p class="card-text">
+    <span class="card-title shop-item-title">H. MOSER & CIE.</span>
+    <p class="card-text shop-item-details">
       Montre Endeavour <br> 
-      PRÉ-COMMANDER <br>
-     168 437 TND</p>
-     <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+      PRÉ-COMMANDER </p>
+    <span class="shop-item-price">   168 437 TND</span>
+     <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
   </div>
 </div></div>
 </div>
         <!--------------*********End 3 card 1*********------------->
          <!------------**************3 card 2***********------------->
          <div class="row card3">
-          <div class="col-md-3"><div class="card mb-5">
-            <img src="//cache.mrporter.com/variants/images/33599693056300801/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card mb-5 shop-item">
+            <img src="//cache.mrporter.com/variants/images/33599693056300801/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">BAUME & MERCIER</h5>
-              <p class="card-text">
-                Montre Capeland <br> réf. N ° M0A10452 <br>
+              <span class="card-title shop-item-title">BAUME & MERCIER</span>
+              <p class="card-text shop-item-details">
+                Montre Capeland <br> réf. N ° M0A10452 </p>
                 
-               9 702 TND</p>
-               <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+             <span class="shop-item-price">9 702 TND</span>
+               <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           <!----------------->
-          <div class="col-md-3"><div class="card" >
-            <img src="//cache.mrporter.com/variants/images/33599693056301191/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card shop-item" >
+            <img src="//cache.mrporter.com/variants/images/33599693056301191/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">IWC SCHAFFHAUSEN</h5>
-              <p class="card-text">
+              <span class="card-title shop-item-title">IWC SCHAFFHAUSEN</span>
+              <p class="card-text shop-item-details">
                 Montre d'Aviateur  <br>
-                PRÉ-COMMANDER <br>
-                41 208 TND</p>
-                <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+                PRÉ-COMMANDER </p>
+                <span class="shop-item-price">41 208 TND</span>
+                <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           <!------------------->
-          <div class="col-md-3"><div class="card"  >
-            <img src="//cache.mrporter.com/variants/images/33599693056301202/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card shop-item"  >
+            <img src="//cache.mrporter.com/variants/images/33599693056301202/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">IWC SCHAFFHAUSEN</h5>
-              <p class="card-text">
+              <span class="card-title shop-item-title ">IWC SCHAFFHAUSEN</span>
+              <p class="card-text shop-item-details">
                 Montre Big Pilot's <br>  
-               Édition limitée <br>
-             45 751 TND</p>
-             <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+               Édition limitée </p>
+            <span class="shop-item-price"> 45 751 TND</span>
+             <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           </div>
                   <!--------------*********End 3 card 2*********------------->
                    <!------------**************3 card 3***********------------->
         <div class="row card3">
-          <div class="col-md-3"><div class="card mb-5" >
-            <img src="//cache.mrporter.com/variants/images/22527730566098110/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card mb-5 shop-item" >
+            <img src="//cache.mrporter.com/variants/images/22527730566098110/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">ULYSSE NARDIN</h5>
-              <p class="card-text">
+              <span class="card-title shop-item-title">ULYSSE NARDIN</span>
+              <p class="card-text shop-item-details">
                 Montre Skeleton X <br>
                 
-                18948,41 € / Env. <br> 62 712 TND</p>
-                <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+                18948,41 € / Env. </p>
+                   <span class="shop-item-price"> 62 712 TND </span> 
+                <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           <!----------------->
-          <div class="col-md-3"><div class="card" >
-            <img src="//cache.mrporter.com/variants/images/6630340696378904/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card shop-item" >
+            <img src="//cache.mrporter.com/variants/images/6630340696378904/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">H. MOSER & CIE.</h5>
-              <p class="card-text">
+              <span class="card-title shop-item-title">H. MOSER & CIE.</span>
+              <p class="card-text shop-item-details">
                 Montre Pioneer <br>
                 
-                PRÉ-COMMANDER <br>
-                62 056 TND</p>
-                <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+                PRÉ-COMMANDER </p>
+                <span class="shop-item-price"> 62 056 TND </span> 
+                <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           <!------------------->
-          <div class="col-md-3"><div class="card">
-            <img src="//cache.mrporter.com/variants/images/16301891330333016/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card shop-item">
+            <img src="//cache.mrporter.com/variants/images/16301891330333016/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">IWC SCHAFFHAUSEN</h5>
-              <p class="card-text">
+              <span class="card-title shop-item-title">IWC SCHAFFHAUSEN</span>
+              <p class="card-text shop-item-details">
                 Big Pilot's Perpetual <br> N ° IW503001
-           <br> 87 576 TND</p>
-           <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+              </p> 
+              <span class="shop-item-price"> 87 576 TND </span> 
+           <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           </div>
                   <!--------------*********End 3 card 3*********------------->
                    <!------------**************3 card 4***********------------->
         <div class="row card3">
-          <div class="col-md-3"><div class="card" style="width: 15rem;">
-            <img src="//cache.mrporter.com/variants/images/16301891330334242/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card shop-item" style="width: 15rem;">
+            <img src="//cache.mrporter.com/variants/images/16301891330334242/in/w560_q80.jpg" class="card-img-top shop-item-image " alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">CARTIER</h5>
-              <p class="card-text">
-                Montre Santos <br> réf. N ° W2SA0006
+              <span class="card-title shop-item-title">CARTIER</span>
+              <p class="card-text shop-item-details">
+                Montre Santos <br> réf. N ° W2SA0006</p>
                 
- 30 371 TND</p>
- <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+  <span class="shop-item-price"> 30 371 TND</span> 
+ <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           <!----------------->
-          <div class="col-md-3"><div class="card" style="width: 15rem;">
-            <img src="//cache.mrporter.com/variants/images/16301891330335787/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card shop-item" style="width: 15rem;">
+            <img src="//cache.mrporter.com/variants/images/16301891330335787/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">CARTIER</h5>
-              <p class="card-text">
+              <span class="card-title shop-item-title">CARTIER</span>
+              <p class="card-text shop-item-details">
                 Montre Ballon Bleu <br> Réf. N ° CRWGBB0016
                 
-             <br>  95 875 TND</p>
-             <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+              </p>   <span class="shop-item-price"> 95 875 TND </span> 
+             <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           <!------------------->
-          <div class="col-md-3"><div class="card" style="width: 15rem;" >
-            <img src="//cache.mrporter.com/variants/images/16301891330263557/in/w560_q80.jpg" class="card-img-top" alt="...">
+          <div class="col-md-3"><div class="card shop-item" style="width: 15rem;" >
+            <img src="//cache.mrporter.com/variants/images/16301891330263557/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
-              <h5 class="card-title">MONT BLANC</h5>
-              <p class="card-text">
+              <span class="card-title shop-item-title">MONT BLANC</span>
+              <p class="card-text shop-item-details">
                 Montre chronographe <br> réf. N ° 126102
                 
-              <br> 13 303 TND</p>
-              <a  id="butt-card" href="#" class="btn">Ajouter au panier</a>
+              </p>   <span class="shop-item-price"> 13 303 TND </span> 
+              <a  id="butt-card" href="#" class="btn shop-item-button">Ajouter au panier</a>
             </div>
           </div></div>
           </div>
@@ -236,24 +292,40 @@
       <!---------------------logi --info------------->
       <div class="col-md-3"> <img id="logo-footer" src="images/logo.png" alt=""> <p id="parg-footr">Des modèles qui nous entraînent du plus profond de la Terre au sommet des montagnes, des confins du système solaire aux régions polaires les plus reculées, </p> </div>
       <!--------------------------icon------>
-      <div class="col-md-3"></div>
+      <div class="col-md-3" id="res-sos-tot">
+<img  id="res-sos"src="images/mail.png" alt="">
+<img id="res-sos" src="images/facebook.png" alt="">
+<img id="res-sos" src="images/instagram.png" alt="">
+<img id="res-sos" src="images/twitter-sign.png" alt="">
+
+      </div>
       <!------------------------map--------------------->
-      <div class="col-md-3"><div style="width: 100%"><iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=210&amp;hl=en&amp;q=Tunis%20hammam%20chatt+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/"></a></div></div>
+      <div class="col-md-3"><div id="map-fot" style="width: 100%"><iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=210&amp;hl=en&amp;q=Tunis%20hammam%20chatt+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/"></a></div></div>
       <!----------------------msg-------------->
       <div class="col-md-3"> <p id="par-msg"> <strong>INSCRIVEZ-VOUS POUR LES NOUVELLES DE STYLE</strong> 
         Restez informé des derniers conseils de style et des lancements de produits. En savoir plus sur nos e-mails et notre politique de confidentialité </p>
     <div class="row">
-      <label for="Adresse e-mail"></label>
-      <div class="col-md-2"><input class="form-control" placeholder="votre@adresse.com" value="" aria-label="Adresse e-mail"></div>
-      <div class="col-md-1"> <button type="submit" class="btn btn-light">Soumettre</button></div>
+    
+      <div class="col-md-3 d-flex "> <input type="text" class="search-box" aria-label="Search input with dropdown button" placeholder="Adresse e-mail">
+        <div class="input-group-append">
+          <button class="bs" type="submit"> <img src="images/forward.png" alt=""> </i></button>
+        </div></div>
+       
       <!-------------------->
     </div>
+    <!----------------recaptcha-------------->
+            <div class="Recaptcha "><div data-sitekey="6LcCf7wUAAAAAJrucOQWVSQ2M_mIISSotZvpiViz" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcCf7wUAAAAAJrucOQWVSQ2M_mIISSotZvpiViz&amp;co=aHR0cHM6Ly9zaW1wbG9uLmNvOjQ0Mw..&amp;hl=fr&amp;v=4eHYAlZEVyrAlR9UNnRUmNcL&amp;size=normal&amp;cb=fz6o7fjlglh8" role="presentation" name="a-qnsqvigouzlx" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></div>
+            <!------------------------------>
   </div>
       </div>
   </div></footer>
-  
+
+  <!----------------------------------************test----panier*******************-->
+ 
 <!---------------------------------------link js-------------------------->
 <script src="script.js"></script>
 <script src="panier.js"></script>
 </body>
 </html>
+<!-----------************************************>
+ 

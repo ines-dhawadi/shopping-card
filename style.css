@@ -93,12 +93,12 @@ font-size: 22px;
 .card{
     box-shadow: 5px 8px 8px 8px #c4c1c1c9;
     border-radius: 20px;
-    width: 15rem;
+    width: 16rem;
     height: 30rem;
   
 }
 .card-title{
-    font-size: 16px;
+    font-size: 15px;
 }
 .card-text{
 font-size: 13px;

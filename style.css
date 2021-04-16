@@ -94,32 +94,59 @@ font-size: 22px;
     box-shadow: 5px 8px 8px 8px #c4c1c1c9;
     border-radius: 20px;
     width: 15rem;
-    height: 27rem;
+    height: 30rem;
+  
+}
+.card-title{
+    font-size: 16px;
+}
+.card-text{
+font-size: 13px;
 }
 .card-img-top{
     width: 12rem;
-    height: 15rem;
+    height: 20rem;
 }
 #titre-card-modal{
     font-size: 15px;
-    margin-top: 7rem;
+    margin-top: 6rem;
     margin-left: -6rem;
+    margin-bottom: 2rem;
 
 }
 #prix-{
    font-size: 15px; 
    color: black;
    margin-left: 7rem;
-   margin-top: -6rem;
+   margin-top: -7rem;
    margin-bottom: 3rem;
-   position: relative;
+   
 }
 .cart-quantity-input{
     margin-left: 14rem;
     margin-top: -5rem;
-    height: 2em;
+    height: 1.7em;
+}
+#bt-modlpan{
+    margin-left: 5.5rem;
+    margin-top: -5rem;
+    height: 2.5em;
+}
+#img-modl{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: -7.5rem;
+    width: 15rem;
+    height: 10rem;
+    margin-left: 12.5rem;
+    border-bottom: 2px solid rebeccapurple;
 }
 
+#titre-modl-top{
+    color: #003a63;
+    font-size: 25px;
+   margin-top: 2rem;
+}
 /***********************************************************************/
 /*----------------------------------------Footer--------------------------------*/
 footer{

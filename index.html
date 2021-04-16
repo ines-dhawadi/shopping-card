@@ -50,11 +50,11 @@
       </div>
       <div class="modal-body" style="width: 50rem;">
       <!-------------**************test*********************-->
-      
+     
       <!---------------------------->
 
       <section class="container content-section">
-        <h2 class="section-header">Mon panier</h2>
+        <h6 id="titre-modl-top" class="section-header">Mon panier</h6><img id="img-modl" src="images/img-modal.png" alt="">
         <div class="cart-row" id="titre-panier">
             <span class="cart-item cart-header cart-column ">Éléments</span>
             <span class="cart-price cart-header cart-column ms-5"> Prix</span>
@@ -123,7 +123,7 @@
         <div class="row card3">
 <div class="col-md-3">
   <div class="card mb-5 shop-item">
-  <img src="//cache.mrporter.com/variants/images/11452292647203115/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="..." >
+  <img id="img1" onmouseover="setNewImahe1()" onmouseout="setOldImage01()" src="//cache.mrporter.com/variants/images/11452292647203115/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="..." >
   <div class="card-body text-center">
  
     <span class="card-title shop-item-title">MONT BLANC</span>
@@ -136,7 +136,7 @@
 </div></div>
 <!----------------->
 <div class="col-md-3"><div class="card shop-item">
-  <img src="//cache.mrporter.com/variants/images/11452292646060097/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+  <img id="img2" onmouseover="setNewImahe2()" onmouseout="setOldImage02()"src="//cache.mrporter.com/variants/images/11452292646060097/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
   <div class="card-body text-center">
     <span class="card-title shop-item-title">ROGER DUBUIS</span>
     <p class="card-text shop-item-details">
@@ -148,7 +148,7 @@
 </div></div>
 <!------------------->
 <div class="col-md-3"><div class="card shop-item" >
-  <img src="//cache.mrporter.com/variants/images/6630340696378567/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+  <img id="img3" onmouseover="setNewImahe3()" onmouseout="setOldImage03()"src="//cache.mrporter.com/variants/images/6630340696378567/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
   <div class="card-body text-center">
     <span class="card-title shop-item-title">H. MOSER & CIE.</span>
     <p class="card-text shop-item-details">
@@ -163,7 +163,7 @@
          <!------------**************3 card 2***********------------->
          <div class="row card3">
           <div class="col-md-3"><div class="card mb-5 shop-item">
-            <img src="//cache.mrporter.com/variants/images/33599693056300801/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img4" onmouseover="setNewImahe4()" onmouseout="setOldImage04()" src="//cache.mrporter.com/variants/images/33599693056300801/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">BAUME & MERCIER</span>
               <p class="card-text shop-item-details">
@@ -175,7 +175,7 @@
           </div></div>
           <!----------------->
           <div class="col-md-3"><div class="card shop-item" >
-            <img src="//cache.mrporter.com/variants/images/33599693056301191/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img5" onmouseover="setNewImahe5()" onmouseout="setOldImage05()"src="//cache.mrporter.com/variants/images/33599693056301191/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">IWC SCHAFFHAUSEN</span>
               <p class="card-text shop-item-details">
@@ -187,7 +187,7 @@
           </div></div>
           <!------------------->
           <div class="col-md-3"><div class="card shop-item"  >
-            <img src="//cache.mrporter.com/variants/images/33599693056301202/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img6" onmouseover="setNewImahe6()" onmouseout="setOldImage06()" src="//cache.mrporter.com/variants/images/33599693056301202/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title ">IWC SCHAFFHAUSEN</span>
               <p class="card-text shop-item-details">
@@ -202,7 +202,7 @@
                    <!------------**************3 card 3***********------------->
         <div class="row card3">
           <div class="col-md-3"><div class="card mb-5 shop-item" >
-            <img src="//cache.mrporter.com/variants/images/22527730566098110/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img7" onmouseover="setNewImahe7()" onmouseout="setOldImage07()"src="//cache.mrporter.com/variants/images/22527730566098110/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">ULYSSE NARDIN</span>
               <p class="card-text shop-item-details">
@@ -215,7 +215,7 @@
           </div></div>
           <!----------------->
           <div class="col-md-3"><div class="card shop-item" >
-            <img src="//cache.mrporter.com/variants/images/6630340696378904/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img8" onmouseover="setNewImahe8()" onmouseout="setOldImage08()"src="//cache.mrporter.com/variants/images/6630340696378904/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">H. MOSER & CIE.</span>
               <p class="card-text shop-item-details">
@@ -228,7 +228,7 @@
           </div></div>
           <!------------------->
           <div class="col-md-3"><div class="card shop-item">
-            <img src="//cache.mrporter.com/variants/images/16301891330333016/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img9" onmouseover="setNewImahe9()" onmouseout="setOldImage09()" src="//cache.mrporter.com/variants/images/16301891330333016/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">IWC SCHAFFHAUSEN</span>
               <p class="card-text shop-item-details">
@@ -243,7 +243,7 @@
                    <!------------**************3 card 4***********------------->
         <div class="row card3">
           <div class="col-md-3"><div class="card shop-item" style="width: 15rem;">
-            <img src="//cache.mrporter.com/variants/images/16301891330334242/in/w560_q80.jpg" class="card-img-top shop-item-image " alt="...">
+            <img id="img10" onmouseover="setNewImahe10()" onmouseout="setOldImage010()"src="//cache.mrporter.com/variants/images/16301891330334242/in/w560_q80.jpg" class="card-img-top shop-item-image " alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">CARTIER</span>
               <p class="card-text shop-item-details">
@@ -255,7 +255,7 @@
           </div></div>
           <!----------------->
           <div class="col-md-3"><div class="card shop-item" style="width: 15rem;">
-            <img src="//cache.mrporter.com/variants/images/16301891330335787/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img11" onmouseover="setNewImahe11()" onmouseout="setOldImage011()"src="//cache.mrporter.com/variants/images/16301891330335787/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">CARTIER</span>
               <p class="card-text shop-item-details">
@@ -267,7 +267,7 @@
           </div></div>
           <!------------------->
           <div class="col-md-3"><div class="card shop-item" style="width: 15rem;" >
-            <img src="//cache.mrporter.com/variants/images/16301891330263557/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
+            <img id="img12" onmouseover="setNewImahe12()" onmouseout="setOldImage012()"src="//cache.mrporter.com/variants/images/16301891330263557/in/w560_q80.jpg" class="card-img-top shop-item-image" alt="...">
             <div class="card-body text-center">
               <span class="card-title shop-item-title">MONT BLANC</span>
               <p class="card-text shop-item-details">

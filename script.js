@@ -85,7 +85,7 @@ function addItemToCart(title, price, imageSrc) {
 <span id="prix-" class="cart-price cart-column cart-col">${price}</span>
 <div class="cart-quantity cart-column  cart-col">
     <input id="inpt-modal" class="cart-quantity-input" type="number" value="1">
-    <button id="bt-modlpan" class="btn btn-danger" type="button">REMOVE</button>
+    <button id="bt-modlpan" class="btn btn-danger" type="button"> <img src="images/trash.png" alt=""></button>
 </div>
 `
 

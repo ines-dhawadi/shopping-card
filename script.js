@@ -112,3 +112,10 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = 'TND' + total
 }
+
+
+//*****************************************************ANU=IMG-COV********************************* */
+
+const imgcovr = document.querySelector('.img-covr');
+
+gsap.from(".img-covr",1, {width: '0%'}, {width: '100%', ease: 'Power2.easeInout'} );

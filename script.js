@@ -34,7 +34,7 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('Thank you for your purchase')
+    alert('Merci pour votre achat')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -73,7 +73,7 @@ function addItemToCart(title, price, imageSrc) {
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
+            alert('Cet article est déjà ajouté au panier')
             return
         }
     }
@@ -110,7 +110,7 @@ function updateCartTotal() {
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'TND' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = total + '.'+'TND'
 }
 
 
